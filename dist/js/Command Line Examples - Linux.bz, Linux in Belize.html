@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" type="image/png" href="http://linux.bz/imgs/site/site.32x32.png?v=2">
+	<link rel="stylesheet" type="text/css" href="Command%20Line%20Examples%20-%20Linux.bz,%20Linux%20in%20Belize_files/site.css">
+	<link rel="stylesheet" type="text/css" href="Command%20Line%20Examples%20-%20Linux.bz,%20Linux%20in%20Belize_files/jquery.css" media="screen, projection">
+	<link rel="stylesheet" type="text/css" href="Command%20Line%20Examples%20-%20Linux.bz,%20Linux%20in%20Belize_files/page.css">
+	<script type="text/javascript" src="Command%20Line%20Examples%20-%20Linux.bz,%20Linux%20in%20Belize_files/jquery-1.js"></script>
+	<script type="text/javascript">
+		if (typeof jQuery === 'undefined') {
+			document.write('<' + 'script src="http://linux.bz/imgs/js/jquery-1.11.1.js"><' + '/script>');
+		}
+	</script>
+	<script type="text/javascript" src="Command%20Line%20Examples%20-%20Linux.bz,%20Linux%20in%20Belize_files/jquery_002.js"></script>
+	<script type="text/javascript" src="Command%20Line%20Examples%20-%20Linux.bz,%20Linux%20in%20Belize_files/jquery.js"></script>
+	<script type="text/javascript" src="Command%20Line%20Examples%20-%20Linux.bz,%20Linux%20in%20Belize_files/site.js"></script>
+	<title>Command Line Examples - Linux.bz, Linux in Belize</title>
+	<meta name="copyright" content="©2015 jwebs.bz">
+	<!-- default -->
+<style type="text/css">.fancybox-margin{margin-right:13px;}</style></head>
+
+<body>
+	<!-- sys view: default -->
+	<div class="page">
+		<div style="cursor: pointer;" class="divhead" onmouseover="this.style.cursor='pointer';" onclick="window.location.href='http://linux.bz'">
+		</div>
+		<div class="printhead">
+		</div><!-- ends printhead -->
+		<div class="divleft">
+	<div class="vmenu">
+		<ul>
+		<li class="in1 menu1"><a class="in1 menu1" href="http://linux.bz/" title="Home Page - Linux.bz, Linux in Belize">Home</a></li>
+		<li class="in1 menu1"><a class="in1 menu1" href="http://linux.bz/bitf" title="Belize Internet Task Force - Linux.bz, Linux in Belize">BITF</a></li>
+		<li class="in1 menu1"><a class="in1 menu1" href="http://linux.bz/markus" title="Markus Open Source Overview - Linux.bz, Linux in Belize">Markus</a></li>
+		<li class="in1 menu1"><a class="in1 menu1" href="http://linux.bz/ubuntu" title="Ubuntu Distributions - Linux.bz, Linux in Belize">Ubuntu</a></li>
+		<li class="in1 menu1"><a class="in1 menu1" href="http://linux.bz/commandline" title="Command Line and Aliases - Linux.bz, Linux in Belize">Command Line</a></li>
+		<li class="in2"><a class="in2" href="http://linux.bz/commandline/examples" title="Command Line Examples - Linux.bz, Linux in Belize">Examples</a></li>
+		<li class="in2"><a class="in2" href="http://linux.bz/commandline/variables" title="Command Line Variables and Globbing - Linux.bz, Linux in Belize">Variables</a></li>
+		<li class="in2"><a class="in2" href="http://linux.bz/commandline/builtins" title="Command Line Built-in Commands - Linux.bz, Linux in Belize">Built-ins</a></li>
+		<li class="in2"><a class="in2" href="http://linux.bz/commandline/executables" title="Command Line Executable Programs and Scripts - Linux.bz, Linux in Belize">Executables</a></li>
+		<li class="in2"><a class="in2" href="http://linux.bz/commandline/traps" title="Command Line Traps to Avoid - Linux.bz, Linux in Belize">Traps</a></li>
+		<li class="in2"><a class="in2" href="http://linux.bz/commandline/links" title="Command Line Links - Linux.bz, Linux in Belize">Links</a></li>
+		<li class="in1 menu1"><a class="in1 menu1" href="http://linux.bz/shellscripts" title="Shell Scripts - Linux.bz, Linux in Belize">Shell Scripts</a></li>
+		<li class="in1 menu1"><a class="in1 menu1" href="http://linux.bz/sfd" title="Software Freedom Day - Linux.bz, Linux in Belize">SFD</a></li>
+		<li class="in1 menu1"><a class="in1 menu1" href="http://linux.bz/contact" title="Contact Us - Linux.bz, Linux in Belize">Contact</a></li>
+	</ul>
+	</div>
+		</div><!-- ends divleft -->
+		<div class="divmain" style="float: none; width: auto; overflow: hidden">
+			<div class="header">
+	<div class="hmenu">
+		<ul>
+		<li class="in1"><a class="in1" href="http://linux.bz/" title="Home Page - Linux.bz, Linux in Belize">Home</a></li>
+		<li class="in1"><a class="in1" href="http://linux.bz/bitf" title="Belize Internet Task Force - Linux.bz, Linux in Belize">BITF</a></li>
+		<li class="in1"><a class="in1" href="http://linux.bz/markus" title="Markus Open Source Overview - Linux.bz, Linux in Belize">Markus</a></li>
+		<li class="in1"><a class="in1" href="http://linux.bz/ubuntu" title="Ubuntu Distributions - Linux.bz, Linux in Belize">Ubuntu</a></li>
+		<li class="in1 curr"><a class="in1 curr" href="http://linux.bz/commandline" title="Command Line and Aliases - Linux.bz, Linux in Belize">Command&nbsp;Line</a></li>
+		<li class="in1"><a class="in1" href="http://linux.bz/shellscripts" title="Shell Scripts - Linux.bz, Linux in Belize">Shell&nbsp;Scripts</a></li>
+		<li class="in1"><a class="in1" href="http://linux.bz/sfd" title="Software Freedom Day - Linux.bz, Linux in Belize">SFD</a></li>
+		<li class="in1"><a class="in1" href="http://linux.bz/contact" title="Contact Us - Linux.bz, Linux in Belize">Contact</a></li>
+		</ul>
+	<hr>
+		<ul>
+		<li class="in2 curr"><a class="in2 curr" href="http://linux.bz/commandline/examples" title="Command Line Examples - Linux.bz, Linux in Belize">Examples</a></li>
+		<li class="in2"><a class="in2" href="http://linux.bz/commandline/variables" title="Command Line Variables and Globbing - Linux.bz, Linux in Belize">Variables</a></li>
+		<li class="in2"><a class="in2" href="http://linux.bz/commandline/builtins" title="Command Line Built-in Commands - Linux.bz, Linux in Belize">Built-ins</a></li>
+		<li class="in2"><a class="in2" href="http://linux.bz/commandline/executables" title="Command Line Executable Programs and Scripts - Linux.bz, Linux in Belize">Executables</a></li>
+		<li class="in2"><a class="in2" href="http://linux.bz/commandline/traps" title="Command Line Traps to Avoid - Linux.bz, Linux in Belize">Traps</a></li>
+		<li class="in2"><a class="in2" href="http://linux.bz/commandline/links" title="Command Line Links - Linux.bz, Linux in Belize">Links</a></li>
+		</ul>
+	<hr>
+		<ul>
+	</ul>
+	</div>
+			</div><!-- ends header --><!-- There are 362 tag objects. -->
+
+		<h3>Command Line Examples</h3>
+		<p>First, an example to show why we might even bother learning the command line:</p>
+		<pre>me@ubu:~$ <span class="red">du --max-depth=2 /usr | sort -nr | less</span></pre>
+		<p>This tells the <abbr title="disk usage"><a href="#" style="cursor: help" onclick="if(confirm('du: disk usage')) return false" title="disk usage">du</a></abbr> command to show disk usage to a maximum depth of two
+directories, all the directories in the /usr directory. Then send the output
+of that to the <b>sort</b> command, sorting them numerically, in reverse order,
+and then send that to the <b>less</b> command to page them in case there are too
+many to view on a screen.</p>
+		<p>There may be a GUI program to do that, but these commands would be available
+on virtually all Unix, Linux, or similar operating systems. If your disk is
+getting full, this would help you find where you might be able to delete some
+files.</p>
+		<p>In all of our examples, unless we say otherwise, the part you type is in
+<span class="red">red</span>, though it would not show red on the screen, and you would
+press <b>Enter</b> at the end of the part you type in.</p>
+		<h3>Moving about</h3>
+		<pre>me@ubu:~$ <span class="red">pwd</span>
+/home/ubu</pre>
+		<p>The <abbr title="print working directory"><a href="#" style="cursor: help" onclick="if(confirm('pwd: print working directory')) return false" title="print working directory">pwd</a></abbr> command shows you where you are in the
+directory tree. We will see why this is handy later.</p>
+		<pre>me@ubu:~$ <span class="red">cd Desktop</span>
+me@ubu:~/Desktop/</pre>
+		<p>The <abbr title="change directory"><a href="#" style="cursor: help" onclick="if(confirm('cd: change directory')) return false" title="change directory">cd</a></abbr> command allows you to change the working directory.
+If you type <b>cd</b> by itself it will take you back to your home directory. The
+command <b>cd ..</b> will take you up one level to the <b>parent</b> of this directory.
+In fact, the two dots signifies the parent directory, and a single dot means
+the current directory. To return to the directory where you were before this,
+type <b>cd -</b></p>
+		<h3>Exploring files and directories</h3>
+		<pre>me@ubu:~$ <span class="red">mkdir examples</span>
+me@ubu:~$ <span class="red">cp -rv Examples/* examples/</span>
+'Examples/one.png' -&gt; 'examples/one.png'
+'Examples/two.png' -&gt; 'examples/two.png'
+me@ubu:~$ <span class="red">cd examples</span>
+me@ubu:~/examples$</pre>
+		<p>Wow! What did that do? We first used the <abbr title="make directory"><a href="#" style="cursor: help" onclick="if(confirm('mkdir: make directory')) return false" title="make directory">mkdir</a></abbr>
+command to create a new directory named examples. We already had a
+directory named Examples, but remember filenames and directories in
+Linux are case sensitive, so that is OK, even if many people would
+not recommend doing it.</p>
+		<p>Then we told the <abbr title="copy"><a href="#" style="cursor: help" onclick="if(confirm('cp: copy')) return false" title="copy">cp</a></abbr> command to copy, recursively and verbosely
+(show us what it is doing), everything from the Examples directory into the
+examples directory we made. That gives us some examples we can actually change.</p>
+		<p>Finally we used the <abbr title="change directory"><a href="#" style="cursor: help" onclick="if(confirm('cd: change directory')) return false" title="change directory">cd</a></abbr> command to change into the
+directory we made. And to be sure where we are, we used the
+<abbr title="print working directory"><a href="#" style="cursor: help" onclick="if(confirm('pwd: print working directory')) return false" title="print working directory">pwd</a></abbr> command again.</p>
+		<pre>me@ubu:~$ <span class="red">ls</span>
+me@ubu:~$ <span class="red">mv ubuntu Sax.ogg ubuntu_sax.ogg</span>
+me@ubu:~$ <span class="red">ls -l</span></pre>
+		<p>We used the <abbr title="list"><a href="#" style="cursor: help" onclick="if(confirm('ls: list')) return false" title="list">ls</a></abbr> command to list the directory. Then we told the
+<abbr title="move"><a href="#" style="cursor: help" onclick="if(confirm('mv: move')) return false" title="move">mv</a></abbr> command to move the file <b>ubuntu Sax.ogg</b> to the filename
+<b>ubuntu_sax.ogg</b> — which means rename it. Then we used the <b>ls</b> command
+again, but this time we told it to give a -l (long listing).</p>
+		<pre>me@ubu:~$ <span class="red">cp /usr/share/dict/words .</span></pre>
+		<p>This copies a file called <b>words</b> from where it was into our working directory.</p>
+		<pre>me@ubu:~$ <span class="red">alias</span>
+me@ubu:~$ <span class="red">alias ll='ls -l'</span>
+me@ubu:~$ <span class="ll"></span></pre>
+		<p>The <b>alias</b> command by itself lists all the aliases we have created. The one that
+was there was to make the <b>ls</b> command show certain filenames in color. Then we
+defined <b>ll</b> as an alias for <b>ls -l</b> so it will be easier to show a long listing.
+Then we tested the alias we had created.</p>
+		<pre>me@ubu:~$ <span class="red">ll *.od? *.xls</span>
+me@ubu:~$ <span class="red">rm *.xls</span>
+me@ubu:~$ <span class="red">ll *.od? *.xls</span></pre>
+		<p>For the last line, you could have pressed the Up Arrow key twice to get the
+same command from the <b>command history</b>. This is very handy, along with
+<b>command and filename completion</b>.</p>
+		<pre>me@ubu:~$ <span class="red">mkdir ooo</span>
+me@ubu:~$ <span class="red">mv *.od? ooo/</span>
+me@ubu:~$ <span class="red">ll</span></pre>
+		<p>Here we made a new directory named <b>ooo</b> and then we used the
+<abbr title="move"><a href="#" style="cursor: help" onclick="if(confirm('mv: move')) return false" title="move">mv</a></abbr> command to actually move files rather than rename them.
+Then we asked for a long listing of the working directory.</p>
+		<pre>me@ubu:~$ <span class="red">chmod o-r ubuntu_sax.ogg</span>
+me@ubu:~$ <span class="red">ll</span></pre>
+		<p>We used the 
+		</p><pre>chmod change mode</pre> command to remove the read permission
+from the ubuntu_sax.ogg file, for <b>others</b> who are not <b>me</b> or in the
+<b>me</b> group.<p></p>
+		<p>How would you know how to use <b>chmod</b>? Well, we could check the manual page:</p>
+		<pre>me@ubu:~$ <span class="red">man chmod</span></pre>
+		<h3>System information</h3>
+		<pre>me@ubu:~$ <span class="red">df</span></pre>
+		<p>The <abbr title="disk free"><a href="#" style="cursor: help" onclick="if(confirm('df: disk free')) return false" title="disk free">df</a></abbr> command shows us how much is free on all our mounted
+file devices (something like drive letters on Windows).</p>
+		<pre>me@ubu:~$ <span class="red">free -m</span></pre>
+		<p>The <b>free</b> command shows us how much memory is free. We asked for it in megabytes.</p>
+		<p>The next one (if you have it on your system) will show lots of information
+about running processes (programs) and
+more, that changes about every second. Press <b>q</b> or <b>Q</b> to quit:</p>
+		<pre>me@ubu:~$ <span class="red">top</span></pre>
+		<p>Has anyone ever asked which kernel you are running? No? Well, in case they do,
+you can do this:</p>
+		<pre>me@ubu:~$ <span class="red">uname -a</span></pre>
+		<p>You might one day need some information about your network:</p>
+		<pre>me@ubu:~$ <span class="red">ifconfig</span></pre>
+		<h3>Searching and grepping</h3>
+		<p>Suppose you are looking for a file that has to do with the spelling dictionary
+in LibreOffice. There are a <b>lot</b> of files to look through, but we can use some
+powerful commands to help:</p>
+		<pre>me@ubu:~$ <span class="red">locate libreoffice</span></pre>
+		<p>Whoa! Too many. The <b>locate</b> command found about 19,171 files.</p>
+		<pre>me@ubu:~$ <span class="red">locate libreoffice grep dict</span></pre>
+		<p>The <abbr title="grand regular expression parser"><a href="#" style="cursor: help" onclick="if(confirm('grep: grand regular expression parser')) return false" title="grand regular expression parser">grep</a></abbr> command got us closer.
+We are down to about 177 files that we could check. If we only want the
+English language files, we can make it:</p>
+		<pre>me@ubu:~$ <span class="red">locate libreoffice grep dict-en</span></pre>
+		<p>And now we're down to about 74 files. How did we count those 19 thousand files? Easy:</p>
+		<pre>me@ubu:~$ <span class="red">locate libreoffice wc -l</span></pre>
+		<p>This means we located the 19 thousand libreoffice files, then told the
+shell to take the output of that and run it through the
+<abbr title="word count"><a href="#" style="cursor: help" onclick="if(confirm('wc: word count')) return false" title="word count">wc</a></abbr> program, and report lines (-l) instead of words.</p>
+		<h3>Looks confusing!</h3>
+		<p>The purpose of these pages are not actually to teach you to be a command
+line wizard — there are plenty of tutorials online for that. But maybe this
+will give you an idea about why someone <b>might</b> want to learn to use the
+command line rather than doing <b>everything</b> with a
+<abbr title="graphic user interface"><a href="#" style="cursor: help" onclick="if(confirm('gui: graphic user interface')) return false" title="graphic user interface">gui</a></abbr> program.</p>
+			<div class="footer">
+				<hr>
+				<h4 class="prev"><a href="http://linux.bz/commandline" title="Previous: Command Line and Aliases - Linux.bz, Linux in Belize">Command Line</a>&nbsp;</h4>
+				<h4 class="next">&nbsp;<a href="http://linux.bz/commandline/variables" title="Next: Command Line Variables and Globbing - Linux.bz, Linux in Belize">Variables</a>&nbsp;</h4><br clear="all">
+	<div class="hmenu">
+		<ul>
+		<li class="in1"><a class="in1" href="http://linux.bz/" title="Home Page - Linux.bz, Linux in Belize">Home</a></li>
+		<li class="in1"><a class="in1" href="http://linux.bz/bitf" title="Belize Internet Task Force - Linux.bz, Linux in Belize">BITF</a></li>
+		<li class="in1"><a class="in1" href="http://linux.bz/markus" title="Markus Open Source Overview - Linux.bz, Linux in Belize">Markus</a></li>
+		<li class="in1"><a class="in1" href="http://linux.bz/ubuntu" title="Ubuntu Distributions - Linux.bz, Linux in Belize">Ubuntu</a></li>
+		<li class="in1 curr"><a class="in1 curr" href="http://linux.bz/commandline" title="Command Line and Aliases - Linux.bz, Linux in Belize">Command&nbsp;Line</a></li>
+		<li class="in1"><a class="in1" href="http://linux.bz/shellscripts" title="Shell Scripts - Linux.bz, Linux in Belize">Shell&nbsp;Scripts</a></li>
+		<li class="in1"><a class="in1" href="http://linux.bz/sfd" title="Software Freedom Day - Linux.bz, Linux in Belize">SFD</a></li>
+		<li class="in1"><a class="in1" href="http://linux.bz/contact" title="Contact Us - Linux.bz, Linux in Belize">Contact</a></li>
+		</ul>
+	<hr>
+		<ul>
+		<li class="in2 curr"><a class="in2 curr" href="http://linux.bz/commandline/examples" title="Command Line Examples - Linux.bz, Linux in Belize">Examples</a></li>
+		<li class="in2"><a class="in2" href="http://linux.bz/commandline/variables" title="Command Line Variables and Globbing - Linux.bz, Linux in Belize">Variables</a></li>
+		<li class="in2"><a class="in2" href="http://linux.bz/commandline/builtins" title="Command Line Built-in Commands - Linux.bz, Linux in Belize">Built-ins</a></li>
+		<li class="in2"><a class="in2" href="http://linux.bz/commandline/executables" title="Command Line Executable Programs and Scripts - Linux.bz, Linux in Belize">Executables</a></li>
+		<li class="in2"><a class="in2" href="http://linux.bz/commandline/traps" title="Command Line Traps to Avoid - Linux.bz, Linux in Belize">Traps</a></li>
+		<li class="in2"><a class="in2" href="http://linux.bz/commandline/links" title="Command Line Links - Linux.bz, Linux in Belize">Links</a></li>
+		</ul>
+	<hr>
+		<ul>
+	</ul>
+	</div>
+			</div><!-- ends footer -->
+		</div><!-- ends divmain -->
+		<div class="printfoot">
+			<p>Printed from <a href="http://linux.bz//commandline/examples">linux.bz</a> (Command Line Examples - Linux.bz, Linux in Belize)</p>
+		</div><!-- ends printfoot -->
+		<div class="divfoot">
+		</div><!-- ends divfoot -->
+	</div><!-- end page -->
+
+
+</body></html>
